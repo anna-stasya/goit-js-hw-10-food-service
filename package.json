@@ -21,6 +21,7 @@
     "url": "https://github.com/anna-stasya/goit-js-hw-10-food-service/issues"
   },
   "devDependencies": {
+    "nodemon": "^2.0.7",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
