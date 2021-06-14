@@ -9,8 +9,8 @@ const switchRef = document.querySelector('#theme-switch-toggle');
 // дефолтная тема
 function defaultTheme() {
 
-  const defaultTheme = localStorage.getItem('Theme');
-  //const defaultTheme = ["Theme"];
+  //const defaultTheme = localStorage.getItem('Theme');
+  const defaultTheme = localStorage["Theme"];
   
 
   if (defaultTheme === 'dark-theme') {
