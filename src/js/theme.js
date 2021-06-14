@@ -10,12 +10,15 @@ const switchRef = document.querySelector('#theme-switch-toggle');
 function defaultTheme() {
 
   const defaultTheme = localStorage.getItem('Theme');
+  //const defaultTheme = ["Theme"];
+  
 
-  if (defaultTheme === 'DARK') {
+  if (defaultTheme === 'dark-theme') {
     bodyRef.classList.add(Theme.DARK);
     switchRef.checked = true;
-   }
+  }
 }
+defaultTheme()
    
 
 
