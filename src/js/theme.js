@@ -7,16 +7,21 @@ const bodyRef = document.querySelector('body');
 const switchRef = document.querySelector('#theme-switch-toggle');
 
 // дефолтная тема
+function defaultTheme() {
 
-const defaultTheme = localStorage.getItem('Theme');
-if (defaultTheme === 'DARK') {
-  bodyRef.classList.add(Theme.DARK);
-  switchRef.checked = true;
+  const defaultTheme = localStorage.getItem('Theme');
+
+  if (defaultTheme === 'DARK') {
+    bodyRef.classList.add(Theme.DARK);
+    switchRef.checked = true;
+   }
 }
+   
+
 
 //смена темы со светлой на тёмную
 
-bodyRef.addEventListener('change', onThemeChenge);
+ bodyRef.addEventListener('change', onThemeChenge);
 
 function onThemeChenge(event) {
   if (event.target.checked) {
