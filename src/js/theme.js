@@ -13,14 +13,12 @@ function defaultTheme() {
   const defaultTheme = localStorage["Theme"];
   
 
-  if (defaultTheme === 'dark-theme') {
+  if (defaultTheme === Theme.DARK) {
     bodyRef.classList.add(Theme.DARK);
     switchRef.checked = true;
   }
 }
 defaultTheme()
-   
-
 
 //смена темы со светлой на тёмную
 
